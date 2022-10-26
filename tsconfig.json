@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"typeRoots": ["node_modules/@types"],
+		"target": "es6",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "dist",
+		"allowJs": true,
+		"paths": {
+			"@App/*": ["/src/app"]
+			//    "lib/*": ["common/*"]
+		}
+	},
+	"include": [
+		"src/**/*.mjs",
+		"src/**/*.json",
+		".env",
+		"src/app.ts",
+		"src/config.ts",
+		"src/database.ts",
+		"src/index.ts"
+	],
+	"exclude": [".vscode", "node_modules", "dist"]
+}
